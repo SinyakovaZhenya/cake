@@ -10,22 +10,26 @@
 <body>
 	<nav class="nav-project">
 		<div class="container">
-			<div class="nav-row">
-				<img src="./img/projects/logo.png" alt="" class="logo">
-				<ul class="nav-list">
-					<li class="nav-list__item"><a href="./index.html" class="nav-list__linkpr">Главная</a></li>
-					<li class="nav-list__item"><a href="./project.html" class="nav-list__linkpr">Каталог</a></li>
-					<li class="nav-list__item"><a href="./payment.html" class="nav-list__linkpr nav-list__linkpr--active">Доставка и оплата</a></li>
-					<li class="nav-list__item"><a href="./contacts.html" class="nav-list__linkpr">Контакты</a></li>
+			<button class="burger-btn" id="burger">
+				<span></span><span></span><span></span>
+			</button>
+			<div class="nav-logo"><img src="./img/projects/logo.png" alt="Логотип"></div>
+			<div class="nav-project__menu">
+				<ul class="nav-project__list">
+					<li class="nav-project__item"><a href="./index.html" class="nav-project__linkpr">Главная</a></li>
+					<li class="nav-project__item"><a href="./project.html" class="nav-project__linkpr">Каталог</a></li>
+					<li class="nav-project__item"><a href="./payment.html" class="nav-project__linkpr nav-project__linkpr--active">Доставка и оплата</a></li>
+					<li class="nav-project__item"><a href="./contacts.html" class="nav-project__linkpr">Контакты</a></li>
 				</ul>
 			</div>
+			
 		</div>
 	</nav>	
-	<main id="main" class="section">
+	<main id="main" class="section-payment">
 		<div class="container">
 			<h1 class="title-1a">Доставка и оплата</h1>
 		</div>
 	</main>
-	<script src="./js/main.js"></script>
+	<script src="./js/payment.js"></script>
 </body>
 </html>
