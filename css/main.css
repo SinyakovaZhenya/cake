@@ -240,6 +240,12 @@ section {
 .swiper {
 	width: 85%;
 	padding: 20px 0 !important;
+	font-size: 30px;
+}
+
+.swiper-slide {
+	width: 200px;
+	white-space: nowrap;
 }
 
 .button-prev, .button-next {
@@ -270,36 +276,12 @@ section {
 }
 
 .item {
-	width: 300px;
-	white-space: nowrap;
-	cursor: pointer;
-	text-align: center;
-	border: 0.5px solid #2b5865;
-	border-radius: 10px;
-	background-color: #8fbdc2;
-}
-
-.it.active {
-	box-shadow: 0px 0px 10px 10px #66a7af;
-}
-
-.iconimg {
-	width: 55px;
-	height: 55px;
-	cursor: pointer;
-	font-size: 24px;
-	text-align: center;
-	line-height: 55px;
-	border-radius: 50%;
-	background-color: #6fb2b9;
-}
-
-.item {
 	margin: 5px 30px;
 	padding: 15px 20px;
 	white-space: nowrap;
+	font-size: 30px;
+	text-align: center;
 	cursor: pointer;
-	font-size: 24px;
 	border: 0.5px solid #2b5865;
 	border-radius: 10px;
 	background-color: #8fbdc2;
@@ -309,14 +291,24 @@ section {
 	box-shadow: 0px 0px 10px 10px #66a7af;
 } 
 
+.iconimg {
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #6fb2b9;
+}
+
 .hide {
 	display: none;
-}
+} 
+
 
 /*карточки с тортами и ценами*/
 .col-md-8 {
 	width: 100%;
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	text-align: center;
 }
