@@ -3,11 +3,11 @@
 
 
 html, body {
-	/* display: flex;
-	flex-direction: column; */
-	
+	display: flex;
+	flex-direction: column;
 	font-family: 'Gabriela', serif;
 	letter-spacing: -0.5px;
+	
 }
 
 .block {
@@ -27,21 +27,22 @@ html, body {
 	margin: 0 auto;
 	padding: 0 15px;
 	max-width: 1200px;
+
 }
 
-.nav, .nav-project {
+/* .nav, .nav-project {
 	padding: 10px 0;
 	border-bottom: 2px solid #89a8a2;
 	background-color: #062528; 
 	color: #2b5865;
 	letter-spacing: normal;
-}
+} */
 
-.nav-project {
+/* .nav-project {
 	border-bottom: 2px solid #062528;
-	background-color: #8fbdc2;
+	background: #8fbdc2;
 	color: #062528;
-}
+} */
 
 .nav-logo img{
 	width: 100%;
@@ -191,32 +192,32 @@ html, body {
 /* index.html 'content-home' */
 
 .content-home {
-	padding: 40px 0;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #062528;
+	height: 100vh;
 	color: #8fbdc2;
-	text-align: center;
-	
+	background-image: url(./../img/sinii-tuman-fon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .content__general {
 	padding: 0 15px;
-	/* max-width: 660px; */
+	display: flex;
+	justify-content: space-between;
+	align-items:end;
+	
 }
 
 .content__title {
 	margin-bottom: 20px;
 	font-family: 'Gabriela', serif;
 	text-align: left;
-	font-size: 70px;
+	font-size: 60px;
 	font-weight: 700;
 	line-height: 1.4;
 }
 
 .content__text {
+	margin-top: 50px;
 	margin-bottom: 40px;
 	text-align: left;
 	font-size: 24px;
@@ -227,6 +228,21 @@ html, body {
 	margin-top: 0.5em;
 }
 
+.btn-first a {
+	width: 250px;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 24px;
+	border-bottom: 4px solid #e57601;
+	border-radius: 10px;
+	background-color: #ffa700;
+	color: #062528;
+}
+
+.logo2 img {
+	width: 400px;
+}
+
 /* Projects */
 
 .content-project {
@@ -234,7 +250,9 @@ html, body {
 	min-height: 100vh;
 	margin: 0 auto;
 	padding: 15px;
-	background-color: #8fbdc2;
+	background-image: url(./../img/nezhno-biryuzovii-fon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 section {
@@ -367,7 +385,9 @@ h4 {
 	min-height: 100vh;
 	padding: 70px 0;
 	position: relative;
-	background-color: #8fbdc2;	
+	background-image: url(./../img/nezhno-biryuzovii-fon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
 }
 
 .title {
@@ -385,7 +405,10 @@ h4 {
 	min-height: 100vh;
 	padding: 70px 0;
 	position: relative;
-	background-color: #062528;
+	background-image: url(./../img/sinii-tuman-fon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.8;
 }
 
 .title-contacts {
