@@ -5,9 +5,10 @@
 html, body {
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 	font-family: 'Gabriela', serif;
 	letter-spacing: -0.5px;
-	
+	height: 1000px;
 }
 
 .block {
@@ -111,7 +112,7 @@ html, body {
 
 /*menu burger*/
 
-.burger-btn, .burger-btn-light {
+/* .burger-btn, .burger-btn-light {
 	display: none;
 	width: 40px;
 	height: 40px;
@@ -187,14 +188,14 @@ html, body {
 .nav.open .burger-btn-light span:nth-child(3) {
 	transform: translateY(0) rotate(-45deg);
 	
-}
+} */
 
 /* index.html 'content-home' */
 
 .content-home {
-	height: 100vh;
+	/* height: 200vh; */
 	color: #8fbdc2;
-	background-image: url(./../img/sinii-tuman-fon.png);
+	background-image: url(./../img/temnii-fon-s-blikami-19\ 6.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -203,8 +204,8 @@ html, body {
 	padding: 0 15px;
 	display: flex;
 	justify-content: space-between;
-	align-items:end;
-	
+	align-items: end;
+
 }
 
 .content__title {
@@ -233,24 +234,24 @@ html, body {
 	margin-bottom: 10px;
 	padding: 10px;
 	font-size: 24px;
-	border-bottom: 4px solid #e57601;
+	border-bottom: 4px solid hsl(348, 79%, 62%);
 	border-radius: 10px;
-	background-color: #ffa700;
+	background-color: hsl(348, 92%, 53%);
 	color: #062528;
 }
 
 .logo2 img {
-	width: 400px;
+	width: 1000px;
 }
 
 /* Projects */
 
 .content-project {
 	width: 100%;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	margin: 0 auto;
 	padding: 15px;
-	background-image: url(./../img/nezhno-biryuzovii-fon.jpg);
+	background-image: url(./../img/fon-biryuzovii-nezhnii-2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -347,7 +348,7 @@ section {
 }
 
 h4 {
-   font-size: 1.5rem;
+   font-size: 24px;
    font-weight: 500;
 	font-family: 'Gabriela', serif;
 	height: 70px;
@@ -382,12 +383,13 @@ h4 {
 /* Payment */
 
 .content-payment {
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	padding: 70px 0;
 	position: relative;
-	background-image: url(./../img/nezhno-biryuzovii-fon.jpg);
+	background-image: url(./../img/fon-biryuzovii-nezhnii-2.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;	
+	background-size: cover;
+	text-align: center;	
 }
 
 .title {
@@ -400,15 +402,55 @@ h4 {
 	text-align: center;
 }
 
+.payment {
+	display: flex;
+	justify-content:center;
+}
+
+.payment__block {
+	width: 350px;
+	margin: 40px;
+	border: 0.5px solid #868383;
+	border-radius: 15px;
+	box-shadow: 0px 0px 3px 3px #2b5865;
+	background-color: #8fbdc2;
+	text-align: center;
+}
+
+h3 {
+	font-size: 24px;
+   font-weight: 700;
+	font-family: 'Gabriela', serif;
+	margin: 20px;
+}
+
+.payment__block-text {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px 20px 20px;
+	font-size: 24px;
+	text-align: left;
+}
+
+.btn-payment {
+	width: 30%;
+	margin-top: 30px;
+	padding: 10px;
+	font-size: 24px;
+	border-bottom: 4px solid #e57601;
+	border-radius: 10px;
+	background-color: #ffa700;
+}
+
 /*contacts*/
 .content-contact {
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	padding: 70px 0;
 	position: relative;
-	background-image: url(./../img/sinii-tuman-fon.png);
+	background-image: url(./../img/temnii-fon-s-blikami-19\ 6.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.8;
 }
 
 .title-contacts {
@@ -420,14 +462,39 @@ h4 {
 	text-align: center;
 }
 
+.contact {
+	display: flex;
+	justify-content:center;
+}
+
+.contact__block {
+	width: 100%;
+	margin: 40px;
+	text-align: left;
+	color:  #8fbdc2;
+}
+
+h3 {
+	font-size: 24px;
+   font-weight: 700;
+	font-family: 'Gabriela', serif;
+	margin: 20px;
+}
+
+.contact__block-text {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px 20px 20px;
+	font-size: 24px;
+}
+
+.contact__block-text p {
+	margin-top: 15px;
+}
 
 /* Footer */
 
-.footer {
-	padding: 60px 0 50px;
-	background-color: #062528;
-	color: rgb(155, 240, 246);
-}
 
 .footer__wrapper {
 	display: flex;
@@ -448,215 +515,21 @@ h4 {
 
 .copiright {
 	font-size: 16px;
+	color: #8fbdc2;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
 
-	.block {
-		max-width: 970px;
-	}
-
-	/* Nav */
-	.nav-container {
-		flex-wrap: nowrap;
-	}
-	.nav-logo img {
-		width: 90%;
-	}
-	.nav-logo {
-		width: 50%;
-	}
-	.nav-project__list, .nav__list {
-		column-gap: 15px;
-		font-size: 18px;
-	}
-
-
+} 
 @media (max-width: 992px) {
 
-	.block {
-		max-width: 750px;
-	}
-
-	/* Nav */
-	.nav-container {
-		align-items: self-start;
-		flex-wrap: nowrap;
-	}
-	.nav-logo img {
-		width: 80%;
-	}
-	.nav-logo {
-		width: 40%;
-	}
-
-	.burger-btn, .burger-btn-light {
-		display: block;
-		transform: translate(-80px);
-		margin: 50px 110px;
-
-	}
-
-	.nav-project__menu {
-		width: 350px;
-		
-		padding: 140px 20px 20px 20px;
-		position: absolute;
-		left: -350px;
-		top: 0;
-		transition: transform .5s;
-		background-image: url(../img/orangeFonBurger.jpg);
-		object-fit: cover;
-		background-repeat: no-repeat;
-	}
-
-	.nav-project__list, .nav__list {
-		display: block;
-	}
-
-	.nav-project__item  {
-		display: block;
-		padding: 10px 0;
-		font-size: 20px;
-		color: #062528;
-	}
-
-	.nav__item {
-		display: block;
-		padding: 10px 0;
-		font-size: 30px;
-		color: #062528;
-	}
-
-	.nav-project.open .nav-project__menu {
-		transform: translateX(100%);
-	}
-
-	.nav.open .nav-project__menu {
-		transform: translateX(100%);
-	}
 }
-
 @media (max-width: 767px) {
 
-	.block {
-		max-width: 570px;
-	}
-
-
-
-	.nav-logo {
-		width: 90%;
-		
-	}
-
-	.burger-btn, .burger-btn-light {
-		display: block;
-		/* transform: translate(-150px); */
-		display: block;
-		margin: 50px 110px;
-	}
-
-	.nav-project__menu {
-		width: 350px;
-		height: 100vh;
-		padding: 140px 20px 20px 20px;
-		position: absolute;
-		left: -350px;
-		top: 0;
-		transition: transform .5s;
-		background-image: url(../img/orangeFonBurger.jpg);
-		object-fit: cover;
-		background-repeat: no-repeat;
-	}
-
-	.nav-project__list, .nav__list {
-		display: block;
-	}
-
-	.nav-project__item  {
-		display: block;
-		padding: 10px 0;
-		font-size: 24px;
-		color: #062528;
-	}
-
-	.nav__item {
-		display: block;
-		padding: 10px 0;
-		font-size: 30px;
-		color: #062528;
-	}
-
-	.nav-project.open .nav-project__menu {
-		transform: translateX(100%);
-	}
-
-	.nav.open .nav-project__menu {
-		transform: translateX(100%);
-	}	
 }
-
 @media (max-width: 570px) {
 
-	.block {
-		max-width: 320px;
-	}
-
-	.nav-container {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-
-	.nav-logo {
-		width: 80%;
-	}
-
-	.burger-btn, .burger-btn-light {
-		display: block;
-		margin: 50px 110px;
-	}
-
-	.nav-project__menu {
-		width: 350px;
-		height: 100vh;
-		padding: 140px 20px 20px 20px;
-		position: absolute;
-		left: -350px;
-		top: 0;
-		transition: transform .5s;
-		background-image: url(../img/orangeFonBurger.jpg);
-		object-fit: cover;
-		background-repeat: no-repeat;
-	}
-
-	.nav-project__list, .nav__list {
-		display: block;
-	}
-
-	.nav-project__item  {
-		display: block;
-		padding: 10px 0;
-		font-size: 24px;
-		color: #062528;
-	}
-
-	.nav__item {
-		display: block;
-		padding: 10px 0;
-		font-size: 30px;
-		color: #062528;
-	}
-
-	.nav-project.open .nav-project__menu {
-		transform: translateX(100%);
-	}
-
-	.nav.open .nav-project__menu {
-		transform: translateX(100%);
-	}	
-}
+} */ 
 
 
 
