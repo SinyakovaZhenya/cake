@@ -4,20 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="./css/main.css">
 	<title>Cake</title>
 </head>
 <body>
 	<div class="first">
-		<!-- <nav class="nav-project">
-		</nav> -->
+		
 		<main class="content-project">
+			
 			<div class="block">
 				<div class="nav-container">
-					<button class="burger-btn" id="burger">
-						<span></span><span></span><span></span>
-					</button>
 					<div class="nav-logo"><img src="./img/projects/logo.png" alt="Логотип"></div>
 					<div class="nav-project__menu">
 						<ul class="nav-project__list">
@@ -26,53 +22,43 @@
 							<li class="nav-project__item"><a href="./payment.html" class="nav-project__linkpr">Доставка и оплата</a></li>
 							<li class="nav-project__item"><a href="./contacts.html" class="nav-project__linkpr">Контакты</a></li>
 						</ul>
+					</div>
+					<button type="button" class="mobile-nav-button">
+						<span class="mobile-nav-button__icon"></span>
+					</button>
+					<div class="mobile-nav">
+						<div class="mobile-nav-logo"><img src="./img/projects/logo.png" alt="Логотип"></div>
+						<div class="mobile-nav-list">
+							<ul>
+								<li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+								<li class="nav__item"><a href="./project.html" class="nav__link nav__link--active">Каталог</a></li>
+								<li class="nav__item"><a href="./payment.html" class="nav__link">Доставка и оплата</a></li>
+								<li class="nav__item"><a href="./contacts.html" class="nav__link">Контакты</a></li>
+							</ul>
+						</div>
 					</div>			
 				</div>
 				<h1 class="title">Каталог</h1>
 				<section>
 					<div class="swiper">
-						
-						<div class="swiper-wrapper">
-						
-							<div data-filter="catalog" class="swiper-slide">
-								<div class="item active">Каталог</div>
-							</div>
-							<div data-filter="children" class="swiper-slide" >
-								<div class="item">Детские</div>
-							</div>
-							<div data-filter="woman" class="swiper-slide" >
-								<div class="item">Женские</div>
-							</div>
-							<div data-filter="man" class="swiper-slide" >
-								<div class="item">Мужские</div>
-							</div>
-							<div data-filter="wedding" class="swiper-slide" >
-								<div class="item">Свадебные</div>
-							</div>
-							<div data-filter="dessert" class="swiper-slide" >
-								<div class="item">Десерты</div>
-							</div>
-							<div data-filter="bento" class="swiper-slide" >
-								<div class="item">Бенто-торты</div>
-							</div>
-						</div>
-						
-						<div class="button-prev">
-							<img id="left" class="iconimg" src="./img/icons/сортировать-справа-налево.png">
-						</div>
-						<div class="button-next">
-							<img id="right" class="iconimg" src="./img/icons/сортировать-слева-направо.png">
-						</div>
+						<ul class="swiper-wrapper">
+							<li data-filter="catalog" class="item">Каталог</li>
+							<li data-filter="children" class="item" >Детские</li>
+							<li data-filter="woman" class="item" >Женские</li>
+							<li data-filter="man" class="item" >Мужские</li>
+							<li data-filter="wedding" class="item" >Свадебные</li>
+							<li data-filter="dessert" class="item" >Десерты</li>
+							<li data-filter="bento" class="item" >Бенто-торты</li>
+						</ul>
 					</div>
 					
 					<div class="column">
-
 							<div class="card children">
 								<picture>
 									<source srcset="./img/projects/children1_800x800.jpg" type="image/jpeg" media="(min-width:1200px)">
 									<source srcset="./img/projects/children1_800x800.jpg" type="image/jpeg" media="(min-width:992px)">
 									<source srcset="./img/projects/children1_400x400.jpg" type="image/jpeg" media="(max-width:767px)">
-									<img class="product-img" src="./img/projects/children1_800x800.jpg" alt="">
+									<img class="product-img" data-src="./img/projects/children1_800x800.jpg" alt="">
 								</picture>
 								
 								<div class="card-body">
@@ -495,12 +481,12 @@
 								</picture>
 							
 								<div class="card-body">
-									<h4>Капкейки (заказ от 6 штук)</h4>
-									<p>1 шт.</p>
+									<h4>Капкейки</h4>
+									<p> (заказ от 6 штук)</p>
 
 									<div class="price">
 											<div class="price__weight">от 6 шт.</div>
-											<div class="price__currency">150 ₽ за 1 шт.</div>
+											<div class="price__currency">150 ₽ <br/>за 1 шт.</div>
 									</div>
 
 									<button class="btn"><a href="./contacts.html" class="nav-project__linkpr">Заказать</a></button>
@@ -518,11 +504,11 @@
 						
 								<div class="card-body">
 									<h4>Бенто-торты</h4>
-									<p>6 шт.</p>
+									<p>1 шт.</p>
 
 									<div class="price">
 											<div class="price__weight">от 1000г.</div>
-											<div class="price__currency">раполлоролпроаара</div>
+											<div class="price__currency"></div>
 									</div>
 
 									<button class="btn"><a href="./contacts.html" class="nav-project__linkpr">Заказать</a></button>
@@ -540,11 +526,11 @@
 					
 								<div class="card-body">
 									<h4>Бенто-торты</h4>
-									<p>6 шт.</p>
+									<p>1 шт.</p>
 
 									<div class="price">
 											<div class="price__weight">от 1000г.</div>
-											<div class="price__currency">раполлоролпроаара</div>
+											<div class="price__currency"></div>
 									</div>
 
 									<button class="btn"><a href="./contacts.html" class="nav-project__linkpr">Заказать</a></button>
@@ -562,11 +548,11 @@
 						
 								<div class="card-body">
 									<h4>Бенто-торты</h4>
-									<p>6 шт.</p>
+									<p>1 шт.</p>
 
 									<div class="price">
 											<div class="price__weight">от 1000г.</div>
-											<div class="price__currency">раполлоролпроаара</div>
+											<div class="price__currency"></div>
 									</div>
 
 									<button class="btn"><a href="./contacts.html" class="nav-project__linkpr">Заказать</a></button>
@@ -577,7 +563,9 @@
 					</div>
 				</section>
 			</div>
-			
+			<div class="image">
+				<img src="./img/fon-biryuzovii-nezhnii-2.jpg" alt="fon">
+			</div>
 		</main>
 	</div>
 	
